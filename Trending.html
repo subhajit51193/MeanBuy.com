@@ -10,6 +10,7 @@
         *{
             margin: 0px;
             padding: 0px;
+            
         }
        
         #hover ,#subcategories>p{
@@ -90,15 +91,13 @@
             justify-content: space-around;
             width: 70%;
           
-margin-top: 25px;
-display: grid;
+            margin-top: 25px;
+            display: grid;
             grid-template-columns: repeat(3,295px);
             grid-template-rows: auto;
             gap: 30px 20px;
-           
-
-
         }
+       
         #subcategories>p{
 color: rgb(143, 144, 145);
 background-color: white;
@@ -260,7 +259,7 @@ padding-top: 25px;
                     <p> <a href="signin.html">SIGNUP</a></p>
                 </div>
                 <div>
-                    <p>WELCOME GUEST</p>
+                    <p id="Guest">WELCOME GUEST</p>
                 </div>
             </div>
              <div>
@@ -277,7 +276,7 @@ padding-top: 25px;
         <p> <a href="flashSale.html">Flash Sale </a> </p>
         <p> <a href="">Best Deals</a> </p>
         <p> <a href="">Shop By Brand</a> </p>
-        <p><a href="Tranding.html">Trending</a></p>
+        <p><a href="Trending.html">Trending</a></p>
         <p><a href="newarrival.html"> New Arrivals </a></p>
     </div>
 </div>
@@ -796,5 +795,16 @@ products.append(product);
    
 }
 displayproducts(product);
+
+let userData=JSON.parse(localStorage.getItem("userData")) || [];
+   let userName=[];
+   userName.push(userData)
+   console.log(userName);
+   userData.forEach(function(elem){
+        let p=document.createElement("p");
+        p.innerText=elem.email;
+        document.querySelector("#Guest").innerText=elem.email;
+   })
+       
 </script>
 </html>

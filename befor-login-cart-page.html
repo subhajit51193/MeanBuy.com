@@ -424,8 +424,8 @@
       </div>
       <div id="right">
         <table id="cart_checkout" width="100%" cellspacing="0" cellpadding="0">
-          <tbody>
-            <tr class="trrowprod">
+          <tbody id="pricex">
+            <!-- <tr class="trrowprod">
               <td class="itemcontent">
                 <p>1 x Hello Kitty KidsSwimming Pool - Pink</p>
                 <div class="prodextras">
@@ -438,10 +438,10 @@
                   </p>
                 </div>
               </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
-        <a style="text-align: center; color: #f98d29" href="">Edit Cart</a>
+        <a style="text-align: center; color: #f98d29" href="cart.html">Edit Cart</a>
         <div class="hrline"></div>
 
         <div class="carttotalw">
@@ -455,7 +455,7 @@
             <p style="color: #f98d29">COD Fee ₹0</p>
           </div>
           <p style="margin-top: 20px; margin-left: 10px">
-            Toatl: <span>₹9499.00</span>
+            Toatal: <span>₹9499.00</span>
           </p>
           <div class="simplepay">
             Or 3 interest free payments of
@@ -499,3 +499,46 @@
     
   </body>
 </html>
+<script>
+  
+  let catrtdata=JSON.parse(localStorage.getItem("cart-data"))|| [];
+//   catrtdata.array.forEach(function(elem){
+// //     let Name=document.querySelector(".itemcontent > p")
+// //  Name.element 
+// 
+//   });
+function itemdata(data){
+data.forEach(function (elem) {
+  // let Name=document.querySelector(".itemcontent > p")
+  // Name.innerText=elem.name;
+//   let price=document.querySelector(".colordarkgreen")
+// price.innerText=elem.price;
+let tr1=document.createElement("tr")
+tr1.setAttribute("class","trrowprod")
+
+let td1=document.createElement("td")
+td1.setAttribute("class","itemcontent")
+let p1=document.createElement("p")
+p1.innerText=elem.name
+let div1=document.createElement("div")
+div1.setAttribute("class","prodextras")
+let p2=document.createElement("p")
+let span1=document.createElement("span")
+span1.style="color: black"
+let span2=document.createElement("span")
+span2.innerText="Delivery Date:july 23,2022"
+span2.setAttribute("class","shipdate")
+let span3=document.createElement("span")
+span3.setAttribute("class","colordarkgreen")
+span3.innerText=elem.price
+span1.append(span2)
+p2.append(span1,span3)
+div1.append(p2)
+td1.append(p1,div1)
+tr1.append(td1);
+document.querySelector("#pricex").append(tr1)
+console.log(tr1)
+});
+}
+itemdata(catrtdata);
+</script>

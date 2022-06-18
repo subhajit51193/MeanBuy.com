@@ -1112,6 +1112,8 @@ let smart-watch[
     },
 
 ]
+
+
  {
         img:"",
         name:"",
@@ -1123,3 +1125,19 @@ let smart-watch[
     },
  rating:"4.8/5★",
         price:"₹2,499",
+
+
+
+
+        let logindata=JSON.parse(localStorage.getItem("signinData"))||[];
+document.querySelector(".but").addEventListener("click",mycart)
+function mycart(logindata){
+//   logindata.forEach(function(data){
+//     if(checkSignin(data.email,data.password)===true){
+//     window.location.href="buynoow.html"
+//   }else{
+//     window.location.href="befor-login-cart-page.html"
+//   }
+//   })
+ console.log(logindata)
+}
