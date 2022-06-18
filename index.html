@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,6 @@
             font-size: 13px;
             padding-top: 20px;
         }
-    
         #cartimage>a>img{
             width: 60%;
             height: 40%;
@@ -62,7 +61,8 @@
         #links>a{
         text-decoration: none;
         color: black;
-       }
+        }
+       
         #heading2{
             width: 20%;
             display: flex;
@@ -99,6 +99,7 @@
        #signup>div:first-child>a{
         text-decoration: none;
         color: rgb(71,71,71);
+        
        }
        #signup>div:nth-child(2){
         font-weight: bold;
@@ -123,13 +124,11 @@
         }
         #container{
             /* border: 1px solid grey; */
-            /* width: 100%; */
+            /* width: 99%; */
             /* height: 500px; */
             margin-top: 20px;
             display: flex;
             justify-content:space-between;
-            padding-bottom: 130px;
-
         }
         #container>div:first-child>h3{
             color: rgb(247,148,29);
@@ -158,7 +157,6 @@
             flex-direction: column;
             justify-content: space-evenly;
         }
-        
        #button{
         display: flex;
         justify-content: space-between;
@@ -168,7 +166,7 @@
         margin-left: 10px;
        }
        #button>button:first-child{
-        background-color: rgb(75,104,185);;
+        background-color: rgb(75,104,185);
         color: white;
         width: 46%;
         padding-top: 5px;
@@ -182,7 +180,6 @@
         padding-top: 5px;
         padding-bottom: 5px;
         border-color: transparent;
-
        }
        
         input,
@@ -281,12 +278,10 @@
       #belowcart>div:last-child>h2{
         text-align: center;
         color: rgb(69,90,100);
-
       }
       #belowcart>div:last-child>h5{
         text-align: center;
-        color: rgb(69,90,100);
-
+        color:rgb(69,90,100)
       }
       #line{
         border: 1px solid rgb(247,148,29);
@@ -295,11 +290,9 @@
         /* margin-left:70px ; */
         margin-right: 70px;
       }
-      
+        /* -----------------about section------- */
 
-
-      /* ------about section----- */
-      #box{
+        #box{
             display: flex;
            
             background-color: #f2f2f2;
@@ -369,10 +362,12 @@
             width:60px
             
         }
+    
 
       
     </style>
 </head>
+<a href=""></a>
 <body>
     <div id="heading">
         <div><a href="nav+home.html"><img src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png" alt="Error"></a></div>
@@ -380,13 +375,12 @@
             <div id="links"><a href="https://www.meanbuy.com/in/merchant/signup">Sellers Corner</a> | <a href="https://www.meanbuy.com/in/contact">Feedback</a> | <a href="https://www.meanbuy.com/in/shipping_return">Delivery Info</a></div>
             <div id="signup">
                 <div><a href="signin.html">LOGIN</a> /<a href="index.html">SIGNUP</a> </div>
-
                 <div>WELCOME GUEST</div>
             </div>
            <div id="cartimage"><a href="cart.html"><img src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt=""></a></div>
         </div>
     </div>
-    <div id="heading2"><h4>Login / Sign Up |</h4><button><a href="nav+home.html">Continue Shopping</a></button></div>
+    <div id="heading2"><h4>Login / Sign Up |</h4><button><a href ="nav+home.html">Continue Shopping</a></button></div>
     <div id="line"></div>
     <div id="container">
 
@@ -403,9 +397,11 @@
                 <input id="email" type="email" placeholder="Email Address">
                 <lebel>Password</lebel>
                 <input id="password" type="password" placeholder="Enter password">
-                <button>Login</button>
-                <p><a href="https://www.meanbuy.com/in/authentication/login">Forgot Password?</a></p>
-                <p><a href="index.html">New to Meanbuy? Sign Up!</a></p>
+                <lebel>Confirm password</lebel>
+                <input id="confirmpassword" type="password" placeholder="Password Confirm">  
+                <button>Sign Up</button>
+                <p><a href="signin.html">Already have an Meanbuy Account?Log In!</a></p>
+                <p>By Signing up ,you agree to our</p><p><a href="https://www.meanbuy.com/terms">Terms of Use & Privacy Policy</a></p>
 
             </form>
             
@@ -469,46 +465,76 @@
             <img class="img" src="data:image/png;base64,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" alt="">
            </div>
         </div>
-    </div>
+    </div>    
+    
 </body>
 </html>
 
 
 <script>
    let form=document.querySelector("form");
-   let userData=JSON.parse(localStorage.getItem("userData")) || [];
+    let userData=JSON.parse(localStorage.getItem("userData")) || [];
 
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+        let data={
+            email:form.email.value,
+            password:form.password.value,
+            confirmpassword:form.confirmpassword.value,
+        }
 
- form.addEventListener("submit", function(event){
-    event.preventDefault();
-    let data={
-        email:form.email.value,
-        password:form.password.value,
-    };
-    if (checkSignin(data.email,data.password)===true){
-        localStorage.setItem("signinData",JSON.stringify(userData));
-        alert("Sign In Successful");
-        window.location.href="nav+home.html";
+        // if (checkPassword(data.confirmpassword)===true){
+        //     alert("Submission Succesful")
 
+        //     window.location.href="signin.html";
+        // }
+        // else{
+        //     alert("Wrong Password enetred")
+        // }
+        if (checkEmails(data.email) === true){
+            if (data.password.length!=0){
+                if (data.password===data.confirmpassword){
+                    alert("Signed up succesfully! Please use the login page to Login!")
+                    userData.push(data);
+                    localStorage.setItem("userData",JSON.stringify(userData));
+                    window.location.href="signin.html";
+                }
+                else{
+                    alert("Wrong passwprd! Please try again")
+                }
+            }
+            else{
+                alert("No password entered! Please enter password");
+            }
+            
 
-    }
-    else{
-        alert("Wrong Username or Password");
-    }
-  })
+        }else{
+            alert("Account Already Exists");
+            window.location.href="signin.html";
 
-   function checkSignin(email,password){
-    let filter=userData.filter(function(element){
-        return element.email === email && element.password === password;
+        }
     })
-    if (filter.length>0){
-        return true;
-    }else{
-        return false;
-    }
-   }
 
-    
-    
+    function checkEmails(email){
+        let filtered=userData.filter(function(element){
+            return email === element.email;
+        })
+        if (filtered.length >0){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    function checkPassword(password){
+        if (password.length!=0){
+            if (password==confirmpassword){
+                return true;
+            }
+        }
+        else{
+            return false;
+        }
+    }
 
 </script>

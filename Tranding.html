@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       
+        #hover ,#subcategories>p{
+          cursor: pointer;
+          background-color: aqua;
+        }
+        
+        #nav{
+            width:100%;
+            height:110px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        #upper{
+            height: 65%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+       #upper>div:first-child{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-left: 25px;
+       }
+       #upper>div:first-child>input{
+        height: 25px;
+        width: 300px;
+        margin-left: 20px;
+       }
+       #upper>div:first-child>img{
+        height: 90%;
+       }
+       #upper>div:last-child{
+        display: flex;
+       }
+       #upper>div:last-child>div>div:first-child{
+        display: flex;
+        font-size: 14px;
+        justify-content:right;
+       }
+       #upper>div:last-child>div>div:last-child{
+        font-weight: 600;
+        justify-content:right;
+       }
+       #upper>div:last-child>div{
+        margin-right: 20px;
+       }
+       #upper>div:last-child>div:last-child>img{
+        width: 35px;
+        margin-right: 10px;
+       }
+       #lower{
+        font-size: 12px;
+        display: flex;
+        margin-top: 16px;
+        gap:27px;
+        margin-left: 110px;
+       }
+       #lower>select{
+        border: none;
+        font-weight: 700;
+       }
+    
+        #trandingbox{
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+          margin-top: 25px;
+        }
+        #products{
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+          
+margin-top: 25px;
+display: grid;
+            grid-template-columns: repeat(3,295px);
+            grid-template-rows: auto;
+            gap: 30px 20px;
+           
+
+
+        }
+        #subcategories>p{
+color: rgb(143, 144, 145);
+background-color: white;
+font-style: normal;
+font-size: 14px;
+margin-bottom: 25px;
+        }
+        #subcategories{
+            border-right: 0.1px  solid rgb(230, 232, 233);
+           width:15%;
+        }
+        #subcategories>p:first-child{
+color: black;
+font-size: 21px;
+padding-top: 25px;
+        }
+       
+           
+        #products>div>img{
+            width:100%;
+        }
+       
+       #prceandoffer{
+         display: flex;
+         justify-content: center;
+       
+         justify-content: space-between;
+        margin-top: 44px;
+        text-align: center;
+        margin-bottom: 5px;
+        font-weight: 600;
+        }
+        
+        #nameandrating>p+p{
+          color: white;
+          background-color: rgb(3, 186, 3);
+          width: 19%;
+          padding: 2px 4px;
+          height: 20px;
+          border-radius: 5px;
+          font-size:11px;
+         margin-top: 5px;
+          text-align: center;
+          float: right;
+         
+        }
+        #prceandoffer>p+p{
+          color:rgb(48, 180, 48) ;
+          font-size: 13px;
+          font-weight: 500;
+        }
+        #prceandoffer>p{
+          color: orange;
+          font-size: 20px;
+        }
+        #nameandrating>p{
+         color: rgb(121, 121, 121);
+       margin-top: 3px;
+     
+        }
+       a{
+          text-decoration: none;
+         
+        color: black;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <div id="nav">
+    <div id="upper">
+        <div>
+            <img src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png" alt="logo">
+            <input type="text" placeholder="Search" id="Search">
+        </div>
+        <div>
+            <div>
+                <div>
+                    <p> <a href="index.html">LOGIN</a></p>
+                    <p>/</p>
+                    <p> <a href="signin.html">SIGNUP</a></p>
+                </div>
+                <div>
+                    <p>WELCOME GUEST</p>
+                </div>
+            </div>
+             <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt="cart">
+            </div>
+         </div>
+    </div>
+    <div id="lower">
+        <select id="dropdown">
+            <option value="category">Select Category</option>
+            <option value="mens">Mens</option>
+            <option value="womens">Womens</option>
+        </select>
+        <p> <a href="flashSale.html">Flash Sale </a> </p>
+        <p></a>Best Deals</p>
+        <p></a>Shop By Brand</p>
+        <p><a href="Tranding.html">Trending</a></p>
+        <p><a href="newarrival.html"> New Arrivals </a></p>
+    </div>
+</div>
+
+    <div id="trandingbox">
+<div id="subcategories">
+<p>Subcategories</p>
+<p>Watches</p> 
+<p> Blutoot Earphone</p>
+<p> Smart Watchs</p>
+<p>Electronics</p>
+<p>Toys</p>
+<p>Mens's Watches</p>
+<p>Mobile Accessories</p>
+<p> Flash Sale</p>
+<p> Home Improvement</p>
+<p>Jewellery</p>
+<p> Smart Appliances</p>
+<p>Makeup Accessories</p>
+<p>Home Decor</p>
+<p>Wired Headphones</p>
+<p>Top Selling Smart Watches</p>
+<p>Sporting Bluetooth</p>
+<p>Fashion</p>
+<p>Kitchen Wares</p>
+<p>Wirless Speakers</p>
+<p>Keyboards & Mouse</p>
+</div>
+
+<div id="products">
+    <!-- Append products hear -->
+</div>
+    </div>
+</body>
+<script>
+let product=[
+
+      {
+    brand: "",
+    name: "Dual Movt Quartz Wristwatch",
+    price: "₹1,899",
+    size: "",
+    rating:"4.6/5 ★",
+    offer:"UP TO 24% OFF",
+    productID:"Mens watch",
+    catagory: "Mens Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE5MzQzXC9CbGFja19uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+  },
+  {
+    brand:"",
+    name:"Dual Wirelass Mini Bluetooth Earbuds ",
+    price:"₹1,899",
+    size:"",
+    rating:"4.5/5 ★",
+    offer:"UP TO 53% OFF",
+    productID:"Earbuds",
+    catagory:"Bluetooth Earphone",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIxNjU1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Remote control Aircraft MIG 530",
+    price:"₹3,499",
+    size:"",
+    rating:"4.5/5 ★",
+    offer:"UP TO 30% OFF ",
+    productID:"Remote Contral Aircraft",
+    catagory:"Aircraft",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTk3XC9CbHVlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+
+  },
+   {
+    brand:"",
+    name:"Mens LED Digital Wristwatch",
+    price:"₹2,999",
+    size:"",
+    rating:"4.6/5 ★",
+    offer:"UP TO 33% OFF",
+    productID:"",
+    catagory:"Digital Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE5MzQwXC9CbGFja19uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+
+  },
+   {
+    brand:"",
+    name:"Women ZX19 SmartWatch",
+    price:"₹2,999",
+    size:"",
+    rating:"4.5/5 ★",
+    offer:"UP TO 25% OFF",
+    productID:"Women Watch",
+    catagory:"Women Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMzg0XC9Hb2xkX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+
+  },
+   {
+    brand:"",
+    name:"Mens Luxury Analog Wristwatch",
+    price:"₹2,599",
+    size:"",
+    rating:"3.8/5 ★",
+    offer:"UP TO 42% OFF",
+    productID:"Mens Watch",
+    catagory:"Mens Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDQ1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Mens Digital SmartWatch",
+    price:"₹2,999",
+    size:"",
+    rating:"4.8/5 ★",
+    offer:"UP YO 19% OFF",
+    productID:"Watch",
+    catagory:"Digital Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE5Mjg0XC9CbGFja19uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+
+  },
+   {
+    brand:"",
+    name:"TWS 6D Stereo Earphones",
+    price:"₹1,999",
+    size:"",
+    rating:"4.6/5 ★",
+    offer:"UP TO 33% OFF",
+    productID:"",
+    catagory:"Bluetooth Earphone",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIyNzc4XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Retro V neck Casual Tops",
+    price:"₹1,399",
+    size:"",
+    rating:"3.7/5 ★",
+    offer:"U TO 39% OFF",
+    productID:"Casual",
+    catagory:"Casual",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTc3XC9CbGFja19TXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Qi Wirless Charger ",
+    price:"₹3,199",
+    size:"",
+    rating:"4.6/5 ★",
+    offer:"UP TO 29% OFF",
+    productID:"",
+    catagory:"Wirless charger",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIxNjQ1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Haylou GT 1 Tuch Bluetooth",
+    price:"₹2,499",
+    size:"",
+    rating:"4.6/5 ★;",
+    offer:"UP TO 38% OFF",
+    productID:"Bluetooth Earphone",
+    catagory:"Bluetooth Earphone",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIyOTQxXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"TWS LT04 Smart Watch",
+    price:"₹4799",
+    size:"",
+    rating:"4.7/5 ★",
+    offer:"UP TO 31% OFF",
+    productID:"Digital Watches",
+    catagory:"Digital Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIzMDM3XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Tws Touch Earbuds",
+    price:"₹1,899",
+    size:"",
+    rating:"4.7/5★",
+    offer:"UP TO 27% OFF",
+    productID:"Bluetooth Earbuds",
+    catagory:"Bluetooth Earbuds",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIxODM1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Mens Skuil Watch",
+    price:"₹2,699",
+    size:"",
+    rating:"4.5/5★",
+    offer:"UP TO 33% OFF",
+    productID:"Mens Watch",
+    catagory:"Mens Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE5Nzc2XC9CbGFja19uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+
+  },
+   {
+    brand:"",
+    name:"3D Art Sand Hour Glass",
+    price:"₹1,499",
+    size:"",
+    rating:"4.9/5★",
+    offer:"UP YO 50% OFF",
+    productID:"",
+    catagory:"Home decore",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNzY2XC9QaW5rX25fMV92ZnYuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+
+  },
+   {
+    brand:"",
+    name:"I7s TWSWirless Blutooth Earphone With Charging Box",
+    price:"₹799",
+    size:"",
+    rating:"5.0/5 ★",
+    offer:"UPTO 47% OFF",
+    productID:"",
+    catagory:"Bluetooth Earphones",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIyMDA2XC9CbGFja19uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+
+  },
+   {
+    brand:"",
+    name:"Lether Sport Quartz Watch",
+    price:"₹2,199",
+    size:"",
+    rating:"4.9/5★",
+    offer:"UP TO 21% OFF",
+    productID:"",
+    catagory:"Mens Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjE5MjgzXC9CbHVlX25fMV8xLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"KOSPET TANK M1 Smartwatch",
+    price:"₹4,499",
+    size:"",
+    rating:"4.1/5 ★;",
+    offer:"UP TO 44% OFF",
+    productID:"",
+    catagory:"Mens Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMzg1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+   {
+    brand:"",
+    name:"Waterproof Smart Watch",
+    price:"₹2,399",
+    size:"",
+    rating:"4.4/5★;",
+    offer:"UP TO 29% OFF",
+    productID:"",
+    catagory:"Mens Watches",
+    img:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIxNzc0XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+
+  },
+]
+
+ let products=document.getElementById("products")
+
+function displayproducts(data){
+  
+    data.forEach(function (element){
+        let product=document.createElement("div");
+        product.setAttribute("id","hover")
+let img=document.createElement("img")
+img.src=element.img;
+
+let div1=document.createElement("div");
+div1.id="nameandrating";
+
+let prodname=document.createElement("p")
+prodname.innerText=element.name;
+
+let rating=document.createElement("p")
+rating.innerText=element.rating; 
+let line=document.createElement("hr");
+line.id="line";
+let div2=document.createElement("div");
+div2.id="prceandoffer";
+
+let price=document.createElement("p")
+price.innerText=element.price;
+
+let offer=document.createElement("p")
+offer.innerText=element.offer;
+div1.append(prodname,rating);
+div2.append(price,offer)
+product.append(img,div1,div2);
+
+product.addEventListener("click",function(){
+  localStorage.setItem("product",JSON.stringify(element));
+window.location.href="pr.html"
+})
+products.append(product);
+    });
+   
+}
+displayproducts(product);
+</script>
+</html>

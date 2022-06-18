@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>final sales</title>
+</head>
+<style>
+  #first {
+    width: 100%;
+    height: 2100px;
+    border: 1px solid none;
+    display: flex;
+  }
+
+  #first>div:first-child {
+    width: 17%;
+    height: 2100px;
+    border-right: 1px solid rgb(227, 224, 224);
+    /* border: 1px solid black; */
+  }
+
+  #first>div:last-child {
+    width: 90%;
+    height: 2100px;
+    border: 2px solid none;
+  }
+
+  #first>#fi12>div:first-child {
+    width: 100%;
+    height: 100px;
+    border: 1px solid none;
+  }
+
+  #first>#fi12>div:last-child {
+    width: 90%;
+    height: 2000px;
+    border: 1px solid none;
+  }
+
+  #first>#fi12>#fi121 {
+    margin-right: 20px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #first>#fi12>#fi121>div {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 20%;
+    height: 40px;
+    border: 1px solid none;
+  }
+
+  #first>#fi12>#fi121>div>a {
+    color: rgb(119, 116, 116);
+    ;
+  }
+
+  #sel {
+    /* padding-left: 10px; */
+    width: 10%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(119, 116, 116);
+    padding-top: -15px;
+    padding-bottom: -50px;
+
+  }
+
+  #sel>div {
+    margin-top: 10px;
+    width: 80%;
+    height: 28px;
+    /* border: 1px solid red; */
+    border-right: 1px solid darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: darkgrey;
+  }
+
+  #sel>#div {
+    background-color: white;
+    width: 20%;
+    /* height: 38px; */
+    border: 0px solid white;
+  }
+
+
+  #sel>#div>:nth-of-type(1) {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  #fill>div {
+    display: flex;
+    width: 70%;
+    height: 50px;
+    border-bottom: 2px solid rgb(227, 224, 224);
+    margin-left: 10px;
+  }
+
+  #fi11>div:first-child {
+    margin-top: 30px;
+    width: 10%;
+
+  }
+
+  #fi11>div>p {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 29px;
+    color: rgb(76, 72, 72);
+  }
+
+  #fi11>div:nth-child(2) {
+    border-top: 1px solid rgb(227, 224, 224);
+    width: 89%;
+    height: 59px;
+    margin-bottom: 10px;
+  }
+
+  #fi11>div:nth-child(2)>button {
+    padding: 10px;
+    margin-top: 13px;
+    color: #455a64;
+    border: 0px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+
+
+  #fi11>div:nth-child(3) {
+    border-top: 1px solid rgb(227, 224, 224);
+    width: 89%;
+    height: 59px;
+  }
+
+  #fi11>div:nth-child(3)>button {
+    padding: 10px;
+    margin-top: 13px;
+    color: #455a64;
+    border: 0px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+
+
+  button>.leftmenuacc:first-child {
+    width: 80%;
+    border: 1px solid none;
+    height: 100%;
+  }
+
+  button+i {
+    color: #455a64;
+    margin-left: 70px;
+    margin-top: -20px;
+    font-size: 13px;
+  }
+
+
+  #seop {
+    margin-left: 100px;
+    border: none;
+    background-color: white;
+  }
+
+  #maon {
+    display: grid;
+    /* justify-content: space-evenly; */
+    margin-left: 70px;
+    /* margin-left: 100px; */
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(5, 450px);
+    gap: 20px 10px;
+  }
+
+  #maon>div {
+    border: 1px solid none;
+  }
+
+  #maon>div>img {
+    border: 1px solid none;
+    width: 98%;
+    height: 70%;
+  }
+
+  #maon>div>div {
+    width: 99%;
+    height: 50px;
+    display: flex;
+    /* box-shadow: aliceblue; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    justify-content: space-between;
+    border: 1px solid none;
+  }
+
+  #maon>div>div:nth-child(1) {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  #maon>div>div:nth-child(2) {
+
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  }
+
+
+  #maon>div>div>p {
+    color: darkgray;
+    margin-top: 3px;
+  }
+
+  #maon>div>div>div {
+    background-color: #3cc101;
+    font-size: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 0px 13px 0px 13px;
+    color: #fff;
+  }
+
+  #maon>div>div>h3 {
+    font-size: 20px;
+    color: #f98d2a;
+    margin-top: 8px;
+  }
+
+  #maon>div>div>p:first-child {
+    color: rgb(40, 39, 39);
+  }
+
+  #maon>div>div>p:last-child {
+    font-size: 16px;
+    color: #008A00;
+    margin-top: 8px;
+  }
+</style>
+
+<body>
+  <div id="first">
+    <div id="fi11">
+      <div>
+        <p>FILTER</p>
+      </div>
+      <div>
+        <button class="leftmenuacc active">BRANDS</button>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      <div>
+        <button class="leftmenuacc active">COLORS</button>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+      </button>
+    </div>
+    <div id="fi12">
+      <div id="fi121">
+        <div>
+          <a href="" target="" style="text-decoration:none;">home></a>
+          <a href="" style="text-decoration: none;">Flash Sale></a>
+          <a href="" style="text-decoration: none;">Flash Sale</a>
+        </div>
+        <div id="sel" style="width: 19%; height: 33px; border: 1px solid rgb(197, 194, 194);">
+          <div style="width: 77%; height: 22px; font-size: 16px; margin-top: 6.5px;color: rgb(82, 80, 80);">WHAT'S NEW
+          </div>
+          <i class="fa-solid fa-angle-down" style="margin-top: 2px; margin-right: 15px; font-size: 27px;"></i>
+        </div>
+      </div>
+      <div id="maon">
+      </div>
+    </div>
+  </div>
+</body>
+
+
+</html>
+<script>
+  let arr = [
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMzg4XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "zablaze Strateos 2 Smartwatch", bu: "4.5/5★", price: "₹4,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyMDg5XC9QaW5rX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19", p: "Double-Sided MIrror", bu: "4.5/5★", price: "₹899", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTU3XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "Soap Dispenser & Holder", bu: "4.5/6★", price: "₹1,499", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxOTA1XC9Hb2xkX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19", p: "Hanging Candle Holder", bu: "4.8/5★", price: "₹1,299", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxODM5XC9HcmVlbl9uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "European Tea Set", bu: "4.6/5★", price: "₹5,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxODExXC9Hb2xkX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19", p: "zablaze Strateos 2 Smartwatch", bu: "4.5/5★", price: "₹4,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDU2XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "Ceramic 6 Cups Set", bu: "4.6/5★", price: "₹4,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzY4XC9CbGFja19uXzFfMS5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6MzIwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=", p: "IWO W!& SmartWatch", bu: "4.3/5★", price: "₹2,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMTU3XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "LOKMAT Attack Smart Watch", bu: "2.9/5★", price: "₹4,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMTM4XC9XaGl0ZV9uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "Xiamoi Mi Monitor Light Bar", bu: "3.8/5★", price: "₹5,499", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMDA0XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "Xiaomi Mi Smart Scale", bu: "4.8/5★", price: "₹5,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3NjYyXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "Xiaomi Mi Smart Antibacterial Humidier", bu: "4.4/5★", price: "₹6,499", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3NDE4XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "zablaze Strateos 2 Smartwatch", bu: "4.5/5★", price: "₹4,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3NDMzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "zablaze Strateos 2 Smartwatch", bu: "4.5/5★", price: "₹4,999", pe: "FREE SHOPING" },
+    { img: "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjIwNDQxXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==", p: "zablaze Strateos 2 Smartwatch", bu: "4.5/★", price: "₹4,999", pe: "FREE SHOPING" },
+
+  ]
+  arr.forEach(function (ele) {
+    let mai = document.createElement("div");
+    let imgs = document.createElement("img")
+    imgs.setAttribute("src", ele.img)
+    let l1 = document.createElement("div");
+    let l2 = document.createElement("div");
+    let pri = document.createElement("h3")
+    pri.innerText = ele.price;
+    let rat = document.createElement("p");
+    rat.innerText = ele.pe;
+    let p1 = document.createElement("p");
+    p1.innerText = ele.p;
+    let bu1 = document.createElement("div");
+    bu1.innerText = ele.bu;
+    l1.append(p1, bu1)
+    l2.append(pri, rat)
+    mai.append(imgs, l1, l2)
+    document.querySelector("#maon").append(mai)
+
+  })
+
+</script>
