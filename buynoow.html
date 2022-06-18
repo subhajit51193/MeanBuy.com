@@ -163,10 +163,13 @@
       .itemcontent > p {
         margin: 0 0 5px 0;
         color: #455a64;
+        /* background-color: red; */
       }
       .prodextras > p {
         display: flex;
         justify-content: space-between;
+        /* background-color: red; */
+        /* border:1px solid red; */
       }
       .fa-indian-rupee-sign {
         color: black;
@@ -371,7 +374,7 @@
       <div id="right">
         <table id="cart_checkout" width="100%" cellspacing="0" cellpadding="0">
           <tbody>
-            <tr class="trrowprod">
+            <!-- <tr class="trrowprod">
               <td class="itemcontent">
                 <p>1 x Hello Kitty KidsSwimming Pool - Pink</p>
                 <div class="prodextras">
@@ -384,7 +387,7 @@
                   </p>
                 </div>
               </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
         <a style="text-align: center; color: #f98d29" href="">Edit Cart</a>
@@ -401,7 +404,7 @@
             <p style="color: #f98d29">COD Fee ₹0</p>
           </div>
           <p style="margin-top: 20px; margin-left: 10px">
-            Toatl: <span>₹9499.00</span>
+            Total: <span>₹9499.00</span>
           </p>
           <div class="simplepay">
             Or 3 interest free payments of
@@ -445,3 +448,49 @@
     
   </body>
 </html>
+<script>
+  let cartArr=JSON.parse(localStorage.getItem("cart-data"))||[];
+  console.log(cartArr);
+  display(cartArr);
+  function display(cartArr){
+    let total=0;
+            cartArr.forEach(function(elem){
+             total=total+elem.price2;
+            //  console.log(elem.price2);
+                 
+              let tr=document.createElement("tr");
+               tr.setAttribute("class","trrowprod");
+               let td=document.createElement("td");
+               td.setAttribute("class","itemcontent");
+               let p1=document.createElement("p");
+               p1.innerText=elem.name;
+               let div=document.createElement("div");
+               div.setAttribute("class","prodextras");
+               let p2=document.createElement("p");
+               div.append(p2);
+               let span1=document.createElement("span");
+               span1.style.color="#f98d29"
+                span1.innerText="Delivery Date:";
+               let span2=document.createElement("span");
+               span2.innerText="July 13,2022";
+               span2.style.color="black";
+               span2.setAttribute("class","shipdate");
+               let span3=document.createElement("span");
+               span3.setAttribute("class","colordarkgreen");
+               span3.innerText=elem.price;
+               span1.append(span2);
+              
+               p2.append(span1,span3);
+              
+               td.append(p1,div)
+               tr.append(td);
+                document.querySelector("tbody").append(tr)
+            })
+          document.querySelector(".subtotalcart").innerText=total;
+            console.log(total);
+            document.querySelector('.now+p>span').innerText=total;
+            document.querySelector(".simplepay_amount").innerText=total-1000;
+   
+
+  }
+</script>

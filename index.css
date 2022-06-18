@@ -58,6 +58,16 @@ margin-left: 110px;
 border: none;
 font-weight: 700;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+
+
+
+
 #container{
     display: flex;
 }
