@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,13 +8,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <title>Befor add to cart</title>
+    <title>Document</title>
     <style>
       * {
         font-family: sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+      }
+      a:hover{
+        text-decoration: underline;
       }
       #nav {
         display: flex;
@@ -27,10 +29,12 @@
       }
       #nav > div > img {
         width: 185px;
-        margin-left: 40px;
-        cursor: pointer;
+        margin-left: 70px;
       }
-     
+      #nav > div:last-child {
+        margin-right: 60px;
+        /* border:1px solid red; */
+      }
       .fa-solid {
         font-size: 20px;
         margin-left: 10px;
@@ -38,26 +42,12 @@
         color: orange;
       }
       #last {
-
-        font-size: 12px;
-        margin-right: 40px;
-      }
-     #last>div{
         display: flex;
         font-size: 12px;
-       
-     }
-     #last a{
-        color: #455a64;
-     }
-     #last>h4{
-        margin-top: 5px;
-        font-size: 13px;
-        
-     }
+      }
       #main {
         display: flex;
-        width: 90%;
+        width: 80%;
         margin: auto;
         justify-content: space-between;
         margin-top: 10px;
@@ -74,25 +64,17 @@
       }
 
       
-      #left {
+
+      #left > h3 {
+        margin-bottom: 8px;
+        color: #455a64;
+      }
+      #left > div {
+        margin-left: 5px;
+      }
+      #left > div > p + p {
         margin-top: 6px;
         margin-bottom: 15px;
-        color: #455a64;
-       
-      }
-     
-     
-      input[type="number"] {
-        margin-top: 4px;
-        width: 100%;
-        padding: 2px 0px 2px 4px;
-        font-size: 14px;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        border: 0.5px solid #000;
-        height: 40px;
-        text-align: left;
-        font-family: Roboto, sans-serif;
       }
       input[type="text"] {
         margin-top: 4px;
@@ -121,6 +103,7 @@
       .flexkro > div {
         /* border:1px solid red; */
         width: 49%;
+        margin-bottom:20px;
       }
       select {
         width: 100%;
@@ -140,7 +123,6 @@
       }
       #payment > div {
         width: 12%;
-        cursor:pointer;
         /* border:1px solid red; */
       }
       #payment > div > img {
@@ -161,7 +143,6 @@
         display: block;
         margin: auto;
         border: none;
-        cursor: pointer;
       }
       #cart_checkout .trrowprod td {
         padding: 10px;
@@ -182,10 +163,13 @@
       .itemcontent > p {
         margin: 0 0 5px 0;
         color: #455a64;
+        /* background-color: red; */
       }
       .prodextras > p {
         display: flex;
         justify-content: space-between;
+        /* background-color: red; */
+        /* border:1px solid red; */
       }
       .fa-indian-rupee-sign {
         color: black;
@@ -235,9 +219,6 @@
         
       
       }
-      #btns_form>input+input{
-        cursor: pointer;
-      }
       #inputfield{
         width:200px;
         padding-left: 7px;
@@ -266,12 +247,6 @@
         margin:25px auto;
         background-color: #f98d29;
       }
-      h3+p{
-        margin-top: 3px;
-        margin-bottom: 20px;
-        font-size: 16px;
-    
-      }
     </style>
   </head>
   <body>
@@ -281,34 +256,34 @@
       </div>
       <div id="last">
         <div>
-           
-            <p> <a href="index.html">LOGIN  /</a></p>
-           
-            <p> <a href="signin.html">SIGNUP</a></p>
+          <a>seller's corner |</a>
+          <a>Feedback |</a>
+          <a>Delivery info</a>
         </div>
-        <h4>WELCOME GUEST</h4>
+        <i class="fa-solid fa-bars"></i>
       </div>
     </div>
     <div id="main">
       <div id="left">
         <h3>Your Email & Phone Number</h3>
-        <p>For full account access please<a href="index.html">Login or Sign Up</a></p>
         <div>
-          <label>Email Address </label>
-          <br />
-          <input type="text" placeholder="Email Address" />
+          <label>Email Address</label>
+          <p>aarushroy282@gmail.com</p>
           <label>Phone Number</label>
           <br />
-          <input type="text" placeholder="Phone Number" />
+          <input type="text" id="phone" placeholder="Phone" />
+          <br />
+          <p>
+            <span> <input type="checkbox" /></span> i agree to be contacted with
+            with whatsup for order
+          </p>
         </div>
-        <p>  <span> <input type="checkbox" /></span> i agree to be contacted 
-            with whatsup for order Updates</p>
-            <h3 class="delivery">Delivery Address</h3>
-            <div>
-                <label>Name</label>
-                <br />
-                <input type="text" placeholder="Name" />
-              </div>
+        <h3 class="delivery">Delivery Address</h3>
+        <div>
+          <label>Name</label>
+          <br />
+          <input type="text" placeholder="Name" />
+        </div>
         <div class="flexkro">
           <div>
             <label>Address 1</label>
@@ -326,38 +301,12 @@
           <div>
             <label>State</label>
             <br />
-            
-            <select id="" >
-                <option value="">Select State</option>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                <option value="Assam">Assam</option>
-                <option value="Bihar">Bihar</option>
-                <option value="Chhattisgarh">Chhattisgarh</option>
-                <option value="Goa">Goa</option>
-                <option value="Gujarat">Gujarat</option>
-                <option value="Haryana">Haryana</option>
-                <option value="Himachal Pradesh ">Himachal Pradesh </option>
-                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                <option value="Jharkhand">Jharkhand</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Kerala">Kerala</option>
-                <option value="Madhya Pradesh">Madhya Pradesh</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Manipur">Manipur</option>
-                <option value="Meghalaya">Meghalaya</option>
-                <option value="Mizoram">Mizoram</option>
-                <option value="Nagaland">Nagaland</option>
-                <option value="Odisha">Odisha</option>
-                <option value="Punjab">Punjab</option>
-                <option value="Rajasthan">Rajasthan</option>
-                <option value="Sikkim">Sikkim</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Telangana">Telangana</option>
-                <option value="Tripura">Tripura</option>
-                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                <option value="Uttarakhand">Uttarakhand</option>
-                <option value="West Bengal">West Bengal</option>
+            <select id="">
+              <option value="">Select State</option>
+              <option value="bihar">bihar</option>
+              <option value="bihar">Andhra Pardesh</option>
+              <option value="bihar">Gujrat</option>
+              <option value="bihar">Delhi</option>
             </select>
           </div>
           <div>
@@ -376,7 +325,7 @@
           <div>
             <label>Pin code</label>
             <br />
-            <input id="pin" type="number" placeholder="Pin Code" />
+            <input type="text" placeholder="Pin Code" />
           </div>
         </div>
 
@@ -384,32 +333,32 @@
         <div id="payment">
           <div>
             <img
-              src="https://img.freepik.com/free-vector/cash-delivery-concept_52683-51829.jpg?size=338&ext=jpg&ga=GA1.2.1577840729.1655462886"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaLS2if-gxc9qyoO0ugqT-mhbWDcVePRym6A&usqp=CAU"
             />
             <h4>cash on Delivery (cod)</h4>
           </div>
           <div>
             <img
-              src="https://img.freepik.com/free-vector/concept-credit-card-payment-landing-page_23-2148298985.jpg?size=338&ext=jpg&ga=GA1.2.1577840729.1655462886"
+              src="https://imgk.timesnownews.com/story/1569653930-Credit_Card.jpg"
             />
             <h4>Credit/ Debit Card</h4>
           </div>
 
           <div>
             <img
-              src="https://img.freepik.com/free-vector/payment-information-concept-illustration_114360-2886.jpg?size=338&ext=jpg&ga=GA1.2.1577840729.1655462886"
+              src="https://image.shutterstock.com/image-photo/internet-banking-online-payment-technology-600w-509557246.jpg"
             />
             <h4>net banking</h4>
           </div>
           <div>
             <img
-              src="https://img.freepik.com/free-vector/social-support-concept-residents-getting-basic-benefits-from-government_74855-11060.jpg?size=626&ext=jpg&ga=GA1.2.1577840729.1655462886"
+              src="https://image.shutterstock.com/image-illustration/3d-rendering-zero-percentage-word-260nw-2042688314.jpg"
             />
             <h4>Emi</h4>
           </div>
           <div>
             <img
-              src="https://img.freepik.com/free-vector/payment-information-concept-illustration_114360-2296.jpg?size=338&ext=jpg&ga=GA1.2.1577840729.1655462886"
+              src="https://image.shutterstock.com/image-photo/west-bangal-india-september-28-600w-2098578661.jpg"
             />
             <h4>Upi</h4>
           </div>
@@ -425,7 +374,7 @@
       <div id="right">
         <table id="cart_checkout" width="100%" cellspacing="0" cellpadding="0">
           <tbody>
-            <tr class="trrowprod">
+            <!-- <tr class="trrowprod">
               <td class="itemcontent">
                 <p>1 x Hello Kitty KidsSwimming Pool - Pink</p>
                 <div class="prodextras">
@@ -434,11 +383,11 @@
                       <span class="shipdate"> Delivery Date: </span>
                       July 13,2022
                     </span>
-                    <span class="colordarkgreen"> 5,999.00 </span>
+                    <span class="colordarkgreen"> ₹5,999.00 </span>
                   </p>
                 </div>
               </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
         <a style="text-align: center; color: #f98d29" href="">Edit Cart</a>
@@ -448,14 +397,14 @@
           <div class="row now">
             <p>
               Subtotal:<span style="color: #04ca30" class="subtotalcart"
-                >9'499.00</span
+                >₹9,499.00</span
               >
             </p>
             <p style="color: #f98d29">Shipping Free</p>
             <p style="color: #f98d29">COD Fee ₹0</p>
           </div>
           <p style="margin-top: 20px; margin-left: 10px">
-            Toatl: <span>₹9499.00</span>
+            Total: <span>₹9499.00</span>
           </p>
           <div class="simplepay">
             Or 3 interest free payments of
@@ -499,3 +448,49 @@
     
   </body>
 </html>
+<script>
+  let cartArr=JSON.parse(localStorage.getItem("cart-data"))||[];
+  console.log(cartArr);
+  display(cartArr);
+  function display(cartArr){
+    let total=0;
+            cartArr.forEach(function(elem){
+             total=total+elem.price2;
+            //  console.log(elem.price2);
+                 
+              let tr=document.createElement("tr");
+               tr.setAttribute("class","trrowprod");
+               let td=document.createElement("td");
+               td.setAttribute("class","itemcontent");
+               let p1=document.createElement("p");
+               p1.innerText=elem.name;
+               let div=document.createElement("div");
+               div.setAttribute("class","prodextras");
+               let p2=document.createElement("p");
+               div.append(p2);
+               let span1=document.createElement("span");
+               span1.style.color="#f98d29"
+                span1.innerText="Delivery Date:";
+               let span2=document.createElement("span");
+               span2.innerText="July 13,2022";
+               span2.style.color="black";
+               span2.setAttribute("class","shipdate");
+               let span3=document.createElement("span");
+               span3.setAttribute("class","colordarkgreen");
+               span3.innerText=elem.price;
+               span1.append(span2);
+              
+               p2.append(span1,span3);
+              
+               td.append(p1,div)
+               tr.append(td);
+                document.querySelector("tbody").append(tr)
+            })
+          document.querySelector(".subtotalcart").innerText=total;
+            console.log(total);
+            document.querySelector('.now+p>span').innerText=total;
+            document.querySelector(".simplepay_amount").innerText=total-1000;
+   
+
+  }
+</script>
