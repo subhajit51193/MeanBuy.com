@@ -412,14 +412,10 @@
 
 <script>
     let cartData=JSON.parse(localStorage.getItem("cart-data"))||[];
-    console.log(cartData);
+    // console.log(cartData);
     let total=0;
     let totalPrice=0;
     let totalItem=0;
-
-
-
-
 
 
     
@@ -468,8 +464,8 @@
 
 
         })
-        console.log(totalPrice)
-        console.log(totalItem)
+        // console.log(totalPrice)
+        // console.log(totalItem)
         document.querySelector("#totalItem").append(totalItem)
         document.querySelector("#totalPrice").append(totalPrice)
 
@@ -484,7 +480,6 @@
       localStorage.setItem("cart-data",JSON.stringify(cartData));
       window.location.reload();
 
-
     }
 
     let userData=JSON.parse(localStorage.getItem("userData")) || [];
@@ -496,5 +491,5 @@
         p.innerText=elem.email;
         document.querySelector("#Guest").innerText=elem.email;
    })
-
+ localStorage.setItem("totalcart", totalPrice)
 </script>
