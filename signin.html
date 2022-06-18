@@ -51,12 +51,17 @@
             font-size: 13px;
             padding-top: 20px;
         }
-        #cartimage>img{
+    
+        #cartimage>a>img{
             width: 60%;
             height: 40%;
             padding-top: 15px;
             padding-right: 20px;
         }
+        #links>a{
+        text-decoration: none;
+        color: black;
+       }
         #heading2{
             width: 20%;
             display: flex;
@@ -291,6 +296,7 @@
         /* margin-left:70px ; */
         margin-right: 70px;
       }
+      
 
 
       /* ------about section----- */
@@ -372,13 +378,13 @@
     <div id="heading">
         <div><a href="nav+home.html"><img src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png" alt="Error"></a></div>
         <div>
-            <div><a href="https://www.meanbuy.com/in/merchant/signup">Sellers Corner</a>|<a href="https://www.meanbuy.com/in/contact">Feedback</a>|<a href="https://www.meanbuy.com/in/shipping_return">Delivery Info</a></div>
+            <div id="links"><a href="https://www.meanbuy.com/in/merchant/signup">Sellers Corner</a> | <a href="https://www.meanbuy.com/in/contact">Feedback</a> | <a href="https://www.meanbuy.com/in/shipping_return">Delivery Info</a></div>
             <div id="signup">
                 <div><a href="signin.html">LOGIN</a> /<a href="index.html">SIGNUP</a> </div>
 
                 <div>WELCOME GUEST</div>
             </div>
-           <div id="cartimage"><img src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt=""></div>
+           <div id="cartimage"><a href="cart.html"><img src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt=""></a></div>
         </div>
     </div>
     <div id="heading2"><h4>Login / Sign Up |</h4><button><a href="nav+home.html">Continue Shopping</a></button></div>

@@ -51,11 +51,15 @@
             font-size: 13px;
             padding-top: 20px;
         }
-        #cartimage>img{
+        #cartimage>a>img{
             width: 60%;
             height: 40%;
             padding-top: 15px;
             padding-right: 20px;
+        }
+        #links>a{
+        text-decoration: none;
+        color: black;
         }
        
         #heading2{
@@ -102,6 +106,7 @@
         color:rgb(71,71,71);
         font-size: 15px;
        }
+       
 
 
         
@@ -215,6 +220,10 @@
         background-color: rgb(247,148,29);
         border-width: 1px;
        }
+       #cart+div+div>button>a{
+        text-decoration: none;
+        color: white;
+       }
 
        /* -------- */
        #box{
@@ -305,12 +314,12 @@
     <div id="heading">
         <div><a href="nav+home.html"><img src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png" alt="Error"></a></div>
         <div>
-            <div><a href="https://www.meanbuy.com/in/merchant/signup">Sellers Corner</a>|<a href="https://www.meanbuy.com/in/contact">Feedback</a>|<a href="https://www.meanbuy.com/in/shipping_return">Delivery Info</a></div>
+            <div id="links"><a href="https://www.meanbuy.com/in/merchant/signup">Sellers Corner</a> | <a href="https://www.meanbuy.com/in/contact">Feedback</a> | <a href="https://www.meanbuy.com/in/shipping_return">Delivery Info</a></div>
             <div id="signup">
                 <div><a href="signin.html">LOGIN</a> /<a href="index.html">SIGNUP</a> </div>
-                <div>WELCOME GUEST</div>
+                <div id="Guest">WELCOME GUEST</div>
             </div>
-           <div id="cartimage"><img src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt=""></div>
+           <div id="cartimage"><a href="cart.html"><img src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt=""></a></div>
         </div>
     </div>
     <div id="heading2"><h4>Login / Sign Up |</h4><button><a href ="nav+home.html">Continue Shopping</a></button></div>
@@ -341,7 +350,7 @@
                 </div>
                 <div>
                  <h4>Cart Total:₹<p id="totalPrice"></p></h4>
-                 <button>CHECKOUT NOW</button>
+                 <button><a href="buynow.html">CHECKOUT NOW</a></button>
                 </div>
         </div>
     </div>
@@ -477,5 +486,15 @@
 
 
     }
+
+    let userData=JSON.parse(localStorage.getItem("userData")) || [];
+   let userName=[];
+   userName.push(userData)
+   console.log(userName);
+   userData.forEach(function(elem){
+        let p=document.createElement("p");
+        p.innerText=elem.email;
+        document.querySelector("#Guest").innerText=elem.email;
+   })
 
 </script>
