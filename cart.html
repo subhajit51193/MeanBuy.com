@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,7 +126,7 @@
         }
 
 
-        /* ------- */
+       
         #container{
             /* border: 1px solid red; */
             width: 100%;
@@ -173,7 +174,7 @@
             width: 100%;
             height: 100%;
         }
-      /* ------- */
+     
 
       #cart{
         /* border: 1px solid black; */
@@ -225,7 +226,7 @@
         color: white;
        }
 
-       /* -------- */
+      
        #box{
             display: flex;
            
@@ -411,12 +412,11 @@
 </html>
 
 <script>
-    let cartData=JSON.parse(localStorage.getItem("cart-data"))||[];
-    // console.log(cartData);
+ let cartData=JSON.parse(localStorage.getItem("cart-data"))||[];
+    console.log(cartData);
     let total=0;
     let totalPrice=0;
     let totalItem=0;
-
 
     
     function displayTable(){
@@ -466,6 +466,9 @@
         })
         // console.log(totalPrice)
         // console.log(totalItem)
+
+        console.log(totalPrice)
+        console.log(totalItem)
         document.querySelector("#totalItem").append(totalItem)
         document.querySelector("#totalPrice").append(totalPrice)
 
@@ -480,6 +483,7 @@
       localStorage.setItem("cart-data",JSON.stringify(cartData));
       window.location.reload();
 
+
     }
 
     let userData=JSON.parse(localStorage.getItem("userData")) || [];
@@ -491,5 +495,9 @@
         p.innerText=elem.email;
         document.querySelector("#Guest").innerText=elem.email;
    })
- localStorage.setItem("totalcart", totalPrice)
+
+
+
+
+
 </script>

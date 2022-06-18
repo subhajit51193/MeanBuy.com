@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Info</title>
     <style>
+
         *{
             margin: 0px;
             padding: 0px;
@@ -451,9 +452,15 @@ let cartData=JSON.parse(localStorage.getItem("cart-data"))|| [];
 function addToCart(){
     cartData.push(dataProduct);
     localStorage.setItem("cart-data",JSON.stringify(cartData));
+
    
 
 }
+
+
+  
+
+
 
 </script>
 </html>
