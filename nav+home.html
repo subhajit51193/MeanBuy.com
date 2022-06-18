@@ -474,6 +474,13 @@
         #dropdown:hover{
             cursor: pointer;
         }
+        #upper img:hover{
+            cursor: pointer;
+        }
+        #upper a:hover{
+            color: darkorange;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -495,7 +502,7 @@
                     </div>
                 </div>
                  <div>
-                    <img src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt="cart">
+                    <img id="cartLogo" src="https://cdn-icons-png.flaticon.com/512/211/211170.png" alt="cart">
                 </div>
              </div>
         </div>
@@ -1226,4 +1233,7 @@ let fastMovingArr=[
         document.querySelector("#Guest").innerText=elem.email;
    })
        
+    document.getElementById("cartLogo").addEventListener("click",function(){
+        window.location.href="cart.html"
+    })
 </script>
