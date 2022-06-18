@@ -6,6 +6,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="buynow.css" />
     <title>Buynow</title>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        border-bottom: 1px solid orange;
+      }
+      #nav > div > img {
+        width: 185px;
+        margin-left: 70px;
+      }
+      #nav > div:last-child {
+        margin-right: 60px;
+        /* border:1px solid red; */
+      }
+      .fa-solid {
+        font-size: 20px;
+        margin-left: 10px;
+        padding: 0px 10px;
+        color: orange;
+      }
+      #last {
+        display: flex;
+        font-size: 12px;
+      }
+      #main {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding:20px;
+      }
+      #main > div {
+        width: 48%;
+        margin-top: 20px;
+        color: #455a64;
+      }
+      label {
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      
+
+      #left > h3 {
+        margin-bottom: 8px;
+        color: #455a64;
+      }
+      #left > div {
+        margin-left: 5px;
+      }
+      #left > div > p + p {
+        margin-top: 6px;
+        margin-bottom: 15px;
+      }
+      input[type="text"] {
+        margin-top: 4px;
+        width: 100%;
+        padding: 2px 0px 2px 4px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 0.5px solid #000;
+        height: 40px;
+        text-align: left;
+        font-family: Roboto, sans-serif;
+      }
+      .delivery {
+        margin-top: 30px;
+        color: #455a64;
+      }
+      .delivery + div {
+        margin-bottom: 15px;
+      }
+
+      .flexkro {
+        display: flex;
+        justify-content: space-between;
+      }
+      .flexkro > div {
+        /* border:1px solid red; */
+        width: 49%;
+      }
+      select {
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+        margin-top: 4px;
+        outline: 0;
+        height: 40px;
+        border: 0.5px solid black;
+        border-radius: 4px;
+        font-family: sans-serif;
+        color: #455a64;
+      }
+      #payment {
+        display: flex;
+        justify-content: space-between;
+      }
+      #payment > div {
+        width: 12%;
+        /* border:1px solid red; */
+      }
+      #payment > div > img {
+        width: 100%;
+        height: 70px;
+        /* border:1px solid red; */
+        border-radius: 30%;
+      }
+      #payment > div > h4 {
+        text-align: center;
+      }
+      button {
+        width: 80%;
+        background-color: orange;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        display: block;
+        margin: auto;
+        border: none;
+      }
+      #cart_checkout .trrowprod td {
+        padding: 10px;
+      }
+      table {
+        border-spacing: 10px;
+        background-color: transparent;
+      }
+      .shipdate {
+        color: #f7941d;
+      }
+      .trrowprod {
+        background-color: #d9d8d8;
+      }
+      .itemcontent {
+        padding: 100px;
+      }
+      .itemcontent > p {
+        margin: 0 0 5px 0;
+        color: #455a64;
+      }
+      .prodextras > p {
+        display: flex;
+        justify-content: space-between;
+      }
+      .fa-indian-rupee-sign {
+        color: black;
+        font-size: 16px;
+        margin-right: 0;
+      }
+      a {
+        text-decoration: none;
+        margin-left: 10px;
+      }
+      .hrline {
+        height: 0.5px;
+        width: 100%;
+        margin: 10px 0;
+        background-color: black;
+        box-sizing: border-box;
+      }
+      .row {
+        margin-left: 10px;
+      }
+      .simplepay {
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      .simplepayicon {
+        background-image: url(https://d64lkarmo2mrq.cloudfront.net/icons/89165818.png);
+        background-size: 40px 14px;
+        display: inline-block;
+        width: 40px;
+        height: 14px;
+      }
+      .small {
+        margin-left: 10px;
+        margin-top: 30px;
+      }
+      h6 {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 12px;
+      }
+      #btns_form {
+        width:320px;
+        height:40px;
+        display: flex;
+        margin: 30px 10px;
+        align-items: center;
+        
+      
+      }
+      #inputfield{
+        width:200px;
+        padding-left: 7px;
+        border-radius: 0;
+        border-right:0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+      #applyCoupon{
+        width:120px;
+        height:40px;
+        background-color: #f98d29;
+        border: none;
+        margin-top:-6px;
+        text-align: center;
+        color:white;
+      }
+      .wrap_banner img{
+        display: block;
+        margin:auto;
+        width:100px;
+      }
+      .orangebar{
+        height:3px;
+        width:40px;
+        margin:25px auto;
+        background-color: #f98d29;
+      }
+    </style>
+
   </head>
   <body>
     <div id="nav">
@@ -51,7 +293,11 @@
           <div>
             <label>Address 2</label>
             <br />
+
             <input type="text" placeholder="Address 2" />
+
+            <input type="text" placeholder="Address 2" />;
+
           </div>
         </div>
 
@@ -70,6 +316,9 @@
           <div>
             <label>City</label>
             <br />
+
+            <input type="text" placeholder="City" />
+
             <input type="text" placeholder="City" />
           </div>
         </div>
@@ -84,6 +333,9 @@
             <label>Pin code</label>
             <br />
             <input type="text" placeholder="Pin Code" />
+
+            <input type="text" placeholder="Pin Code" />;
+
           </div>
         </div>
 
@@ -133,6 +385,20 @@
         <table id="cart_checkout" width="100%" cellspacing="0" cellpadding="0">
           <tbody>
     
+            <tr class="trrowprod">
+              <td class="itemcontent">
+                <p>1 x Hello Kitty KidsSwimming Pool - Pink</p>
+                <div class="prodextras">
+                  <p>
+                    <span style="color: black">
+                      <span class="shipdate"> Delivery Date: </span>
+                      July 13,2022
+                    </span>
+                    <span class="colordarkgreen"> 5,999.00 </span>
+                  </p>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
         <a style="text-align: center; color: #f98d29" href="">Edit Cart</a>
@@ -142,14 +408,19 @@
           <div class="row now">
             <p>
               Subtotal:<span style="color: #04ca30" class="subtotalcart"
+
                 >₹9,499.00</span
-              >
+
+                >9'499.00</span>
             </p>
             <p style="color: #f98d29">Shipping Free</p>
             <p style="color: #f98d29">COD Fee ₹0</p>
           </div>
           <p style="margin-top: 20px; margin-left: 10px">
+
+ 
             Total: <span>₹9499.00</span>
+            Toatl: <span>₹9499.00</span>
           </p>
           <div class="simplepay">
             Or 3 interest free payments of
@@ -193,5 +464,6 @@
     
   </body>
 </html>
+
 
 <script src="buynow.js"></script>
