@@ -1,5 +1,11 @@
+Team Name : Team-MeanBuy
 
-
+1> vaibhav firke 
+2> Manoj kumar 
+3> Subhajit Saha
+4> Rahul Singh
+5> Prince kumar
+6> Mragendra Chaudhary
 
 let flash-sale=[
     {
